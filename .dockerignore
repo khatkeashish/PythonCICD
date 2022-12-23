@@ -1,0 +1,35 @@
+
+# tests and coverage
+htmlcov
+.coverage
+coverage.xml
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+.envrc
+
+# Jupyter notebook
+.ipynb_checkpoints
+
+# git
+.pre-commit-config.yaml
+
+# VScode
+.vscode/
+
+# Excel files
+.xlsx
+
+#pyenv versions
+.python-version
+
+# misc
+.talismanrc
+
+# mac
+.DS_Store

@@ -1,3 +1,3 @@
-[![Python package](https://github.com/ashsne/PythonCICD/actions/workflows/python-package.yml/badge.svg)](https://github.com/ashsne/PythonCICD/actions/workflows/python-package.yml)
+[![CI](https://github.com/ashsne/PythonCICD/actions/workflows/ci.yml/badge.svg)](https://github.com/ashsne/PythonCICD/actions/workflows/ci.yml)
 
 # CICD on github

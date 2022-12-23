@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "python_cicd"
 version = "0.1.0"
-description = ""
+description = "CICD on github"
 authors = ["ashish.khatke"]
 
 [tool.poetry.dependencies]

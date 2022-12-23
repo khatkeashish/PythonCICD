@@ -1,4 +1,4 @@
-from src.python_cicd import __version__
+from python_cicd import __version__
 
 
 def test_version():

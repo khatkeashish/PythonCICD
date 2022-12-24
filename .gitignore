@@ -12,6 +12,7 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
+coverage/*
 *.cover
 *.py,cover
 .hypothesis/
@@ -43,4 +44,3 @@ Footer
 © 2022 GitHub, Inc.
 Footer navigation
 Terms
-

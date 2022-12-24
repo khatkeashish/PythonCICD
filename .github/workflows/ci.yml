@@ -32,28 +32,26 @@ jobs:
         version: 1.1.13
         virtualenvs-create: true
         virtualenvs-in-project: false
-        virtualenvs-path: ~/.virtualenvs
-        installer-parallel: true
+          #virtualenvs-path: ~/.virtualenvs
+          #installer-parallel: true
 
     - name: Install Dependencies
       run: poetry install
-      if: steps.cache.outputs.cache-hit != 'true'
+        #if: steps.cache.outputs.cache-hit != 'true'
 
-    - name: Code Quality
-      run: poetry run black . --check
+    - name: Lint with flake8, black, isort and mypy
+      run: |
+        poetry run isort --check .
+        poetry run black --check .
+        poetry run flake8 .
+        poetry run mypy .
 
     - name: Test with pytest
-      run: poetry run pytest -rP ./tests --doctest-modules --junitxml=./coverage/test-results.xml --cov=python_cicd --cov-report=term --cov-report=xml
+      run: |
+        poetry run pytest --cov --cov-report=xml tests/
 
-    - name: Code Coverage Report
-      uses: irongut/CodeCoverageSummary@v1.3.0
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
       with:
-        filename: ./coverage/test-results.xml
-        badge: true
-        fail_below_min: true
-        format: markdown
-        hide_branch_rate: false
-        hide_complexity: true
-        indicators: true
-        output: both
-        thresholds: '60 80'
+        files: ./coverage.xml
+        env_vars: PYTHON

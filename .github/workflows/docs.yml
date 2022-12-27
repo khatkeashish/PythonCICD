@@ -1,5 +1,9 @@
 name: "docs"
 on:
+  workflow_run:
+      workflows: ["ci"]
+      types:
+        - completed
   push:
     branches: [ "main" ]
   pull_request:

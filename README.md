@@ -41,3 +41,10 @@ Install following packages
 - [Publish docs](./.github/workflows/docs.yml)
 
 
+### Configurations
+- [project](pyproject.toml)
+- [docker](.dockerignore)
+- [flake8](.flake8)
+- [pre-commit](.pre-commit-config.yaml)
+- [black](pyproject.toml)
+- [isort](pyproject.toml)

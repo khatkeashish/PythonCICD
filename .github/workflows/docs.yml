@@ -1,6 +1,9 @@
-name: "Pull Request Docs Check"
-on: 
-- pull_request
+name: "Publish docs"
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   docs:

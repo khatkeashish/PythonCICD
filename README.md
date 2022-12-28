@@ -39,6 +39,7 @@ Install following packages
 ### Github actions
 - [CI](./.github/workflows/ci.yml)
 - [Publish docs](./.github/workflows/docs.yml)
+    - source: https://coderefinery.github.io/documentation/gh_workflow/ 
 
 
 ### Configurations

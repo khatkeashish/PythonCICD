@@ -5,6 +5,12 @@
 
 **This is very opiniated way of doing CICD.**
 
+## Usage of the template
+It is required to install [cookiecutter] (https://github.com/cookiecutter/cookiecutter) in order to use this templates,
+then run from the terminal:
+```bash
+cookiecutter [repository_url_address]
+```
 
 ## Prerequisites
 Install following packages
@@ -19,7 +25,6 @@ Install following packages
 - Install pre-commit hook: `pre-commit install`
 - Run tests with vertual env: `make tests`
 - Run the same tests in docker container: `make docker_tests`
-
 
 <!-- ## CICD components -->
 
@@ -40,7 +45,6 @@ Install following packages
 - [CI](./.github/workflows/ci.yml)
 - [Publish docs](./.github/workflows/docs.yml)
     - source: https://coderefinery.github.io/documentation/gh_workflow/ 
-
 
 ### Configurations
 - [project](pyproject.toml)
